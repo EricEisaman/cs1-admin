@@ -1,3 +1,5 @@
+![CS1 Admin](https://cdn.glitch.com/22ac3967-dc2f-4f45-ae11-abb640fc8eb8%2Fcs1_admin.png?v=1567970554724)
+
 # CS1 Admin App
 ____
 
