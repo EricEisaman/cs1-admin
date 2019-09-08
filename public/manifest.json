@@ -1,12 +1,12 @@
 {
   "name": "CS1 Admin",
   "short_name": "CS1 Admin",
-  "description": "CS1 Game Engine Application Administration",
+  "description": "CS1 Game Engine Application Management",
   "icons": [
     {
       "sizes": "192x192",
       "type": "image/png",
-      "src": "https://cdn.glitch.com/a66c3f5c-9aba-45c0-952e-ccc59d8b0df3%2FCS1_logo_192.png?v=1564891473987"
+      "src": "https://cdn.glitch.com/22ac3967-dc2f-4f45-ae11-abb640fc8eb8%2Fcs1_admin_logo_192.png?v=1567970828034"
     },
     {
       "sizes": "512x512",
