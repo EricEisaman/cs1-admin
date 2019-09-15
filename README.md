@@ -15,4 +15,4 @@ ____
 
 ## Mobile PWA
 ![Mobile PWA](https://cdn.glitch.com/22ac3967-dc2f-4f45-ae11-abb640fc8eb8%2Fcs1_admin_app_mobile_icon.jpg?v=1567971394307)
-![Mobile PWA](https://cdn.glitch.com/22ac3967-dc2f-4f45-ae11-abb640fc8eb8%2FCS1_Admin_App_Mobile_pWA.jpg?v=1567968941097)
+![Mobile PWA](https://cdn.glitch.com/22ac3967-dc2f-4f45-ae11-abb640fc8eb8%2Fcs1_admin_app_mobile_PWA.jpg?v=1568579006365)
