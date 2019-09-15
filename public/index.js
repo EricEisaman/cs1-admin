@@ -167,7 +167,14 @@ const login = _=>{
             msg('',false);
             ADMIN.users = users;
             users.forEach( (user,index)=>{
-              c.innerHTML+=`<span id="up${index}" class="user"><i class="ubtn-remove" data-feather="x-circle"></i><i id="ubtn${index}" class="ubtn-ok" data-feather="save"></i>   name:<span>${user.name}</span>  pw:<span data-index=${index} class="editable" contenteditable="true">${user.pw}</span></span>`;
+              if(user.name=='admin'){
+                c.innerHTML+=`<span id="up-admin" class="user admin"><i id="ubtn${index}" class="ubtn-ok" data-feather="save"></i>   name:<span>${user.name}</span>  pw:<span data-index=${index} class="editable" contenteditable="true">${user.pw}</span></span>`;
+              }else{
+                c.innerHTML+=`<span id="up${index}" class="user"><i class="ubtn-remove" data-feather="x-circle"></i><i id="ubtn${index}" class="ubtn-ok" data-feather="save"></i>   name:<span>${user.name}</span>  pw:<span data-index=${index} class="editable" contenteditable="true">${user.pw}</span></span>`;
+              }
+              
+              
+              
             });
             
             
@@ -297,6 +304,45 @@ if(ADMIN.isMobile()){
         usersCard.style.display='block';
         
         
+        ADMIN.currentPlayers = {};
+        ADMIN.getCurrentPlayers = (cb)=>{
+        
+          ADMIN.socket.emit('get-current-players', players=>{
+            ADMIN.currentPlayers = players;
+            updateCurrentPlayersCard();
+            currentPlayersCard.style.display='block';
+          });
+        
+        }
+        
+        function updateCurrentPlayersCard(){
+           const p = ADMIN.currentPlayers;
+           let c = currentPlayersCardBody;
+           c.innerHTML = '';
+           Object.keys(p).forEach(
+             id=>{
+                 c.innerHTML+=`<span id='player${p[id].name}'><span>${p[id].name}</span></span>`;    
+             }
+           ); 
+        }
+        
+        const currentPlayersCard = document.querySelector('#current-players-card');
+        const currentPlayersCardBody = currentPlayersCard.querySelector('.card-body');
+        
+        ADMIN.getCurrentPlayers();
+        
+        
+        
+        ADMIN.socket.on('new-player',o=>{
+          ADMIN.currentPlayers[o.id]={name:o.name};
+          updateCurrentPlayersCard();
+        });
+  
+        ADMIN.socket.on('remove-player',o=>{
+          delete ADMIN.currentPlayers[o];
+          updateCurrentPlayersCard();
+        });
+        
         
         
         // const icon = document.querySelector("link[rel='shortcut icon']").href;
@@ -311,6 +357,8 @@ if(ADMIN.isMobile()){
     ADMIN.socket.on('new-admin-key',newkey=>{
        cachedKey = newkey;   
     });
+  
+    
     
         
   
