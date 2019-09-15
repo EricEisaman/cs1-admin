@@ -3,7 +3,7 @@
 # CS1 Admin App
 ____
 
-The CS1 Admin App installs as a PWA on laptops, desktops, and mobile devices.  The app provides a dashboard with a card layout interface for managing <a href="https://glitch.com/edit/#!/cs1?path=README.md:1:0" target="_blank" rel="noopener noreferrer">CS1 Game Engine</a> applications **v0.6.5** and later.  The current functionality is limited to adding/removing users and editing user passwords.  The foundations have been laid for a rich integration of administrative tools including realtime game monitoring.
+The CS1 Admin App installs as a PWA on laptops, desktops, and mobile devices.  The app provides a dashboard with a card layout interface for managing <a href="https://glitch.com/edit/#!/cs1?path=README.md:1:0" target="_blank" rel="noopener noreferrer">CS1 Game Engine</a> applications **v0.6.6** and later.  The current functionality is limited to adding/removing users and editing user passwords.  The foundations have been laid for a rich integration of administrative tools including realtime game monitoring.
 
 ____
 
