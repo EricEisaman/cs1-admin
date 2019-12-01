@@ -15,8 +15,8 @@ Teachers can now more easily create and manage educational games where students 
 ____
 
 ## Samsung Galaxy S10
-![Mobile PWA](https://cdn.glitch.com/8b28d6d2-76e7-4f17-9e5e-75e8311c5dae%2Fcs1-mobile_desktop.jpg?v=1575211240824)
-![Mobile PWA](https://cdn.glitch.com/8b28d6d2-76e7-4f17-9e5e-75e8311c5dae%2Fcs1-admin_mobile.jpg?v=1575211246409)
+![Mobile PWA](https://cdn.glitch.com/8b28d6d2-76e7-4f17-9e5e-75e8311c5dae%2FSamsung_S10_desktop.png?v=1575218702402)
+![Mobile PWA](https://cdn.glitch.com/8b28d6d2-76e7-4f17-9e5e-75e8311c5dae%2FSamsung_S10_admin_app.png?v=1575218701627)
 
 ____
 
