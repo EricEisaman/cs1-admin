@@ -169,7 +169,7 @@ main {
   align-items: stretch;
   overflow: hidden;
   background-color: #ffffff;
-  font-size:18px;
+  font-size:16px;
 }
 
 .card-title {
@@ -314,7 +314,7 @@ footer a {
   border-width: 2px;
   border-color:#aaa;
   outline:none;
-  margin-right:10px;
+  margin-right:5px;
 }
 
 .ubtn-ok:hover {
@@ -359,7 +359,7 @@ footer a {
   border-width: 2px;
   border-color:#aaa;
   outline:none;
-  margin-right:10px;
+  margin-right:5px;
 }
 
 .ubtn-new:hover {
@@ -431,7 +431,7 @@ span {
 
 .card {
  margin: 0.1rem; 
- font-size:18px;
+ font-size:16px;
 }  
   
 .card-body{
