@@ -101,7 +101,6 @@ header::after {
   align-items: center;
 }
 .header-logo h2 {
-  font-size: 1.2rem;
   font-weight: 700;
   margin: 0 0 0 0.5rem;
   color: goldenrod;
@@ -170,6 +169,7 @@ main {
   align-items: stretch;
   overflow: hidden;
   background-color: #ffffff;
+  font-size:18px;
 }
 
 .card-title {
@@ -195,17 +195,14 @@ main {
 }
 
 .card-body h1 {
-  font-size: 4rem;
   font-weight: 400;
   margin: 1.5rem 1rem 0.5rem;
 }
 .card-body h2 {
-  font-size: 2.5rem;
   font-weight: 400;
   margin: 0.5rem;
 }
 .card-body h3 {
-  font-size: 2rem;
   font-weight: 400;
   margin: 0.5rem;
 }
@@ -280,7 +277,6 @@ footer a {
 .loading {
   margin: 2rem auto;
   position: relative;
-  font-size: 1rem;
   color: #ddd;
 }
 .loading::before {
@@ -407,10 +403,10 @@ span {
 
 #new-user {
   margin-left:5px;
-  font-size:1.5vw;
+ 
 }
 .user {
-    font-size:1.5vw;
+   
 }
 
 
@@ -434,11 +430,11 @@ span {
 }
 
 .card {
- margin: 0.1rem;      
+ margin: 0.1rem; 
+ font-size:18px;
 }  
   
 .card-body{
-  font-size: 1.0rem;
   font-weight: 400;
   margin: 0.5rem;
 } 
@@ -448,13 +444,12 @@ span {
 }  
   
 #new-user{
-  font-size:0.7rem;
   margin-right:3px;
   margin-left:0px;
 }
   
 .user {
-  font-size:0.7rem;
+
 }
 
 .admin {
@@ -470,5 +465,6 @@ span {
 #icon {
   
   margin-bottom:20px;
+  width: 64px;
   
 }

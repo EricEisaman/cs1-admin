@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="HandheldFriendly" content="true" />
-    <link rel="manifest" href="/manifest.json">
-    <link rel="canonical" href="https://cs1-admin.glitch.me/">
-    <link rel="shortcut icon" href="https://cdn.glitch.com/a66c3f5c-9aba-45c0-952e-ccc59d8b0df3%2FCS1_logo_64.png?v=1564891473540">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     
+<link rel="apple-touch-icon" href="https://cdn.glitch.com/8b28d6d2-76e7-4f17-9e5e-75e8311c5dae%2Fapple-touch-icon.png?v=1575216675363" />
+<link rel="apple-touch-icon" sizes="57x57" href="https://cdn.glitch.com/8b28d6d2-76e7-4f17-9e5e-75e8311c5dae%2Fapple-touch-icon-57x57.png?v=1575216675594" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://cdn.glitch.com/8b28d6d2-76e7-4f17-9e5e-75e8311c5dae%2Fapple-touch-icon-72x72.png?v=1575216675570" />
+<link rel="apple-touch-icon" sizes="76x76" href="https://cdn.glitch.com/8b28d6d2-76e7-4f17-9e5e-75e8311c5dae%2Fapple-touch-icon-76x76.png?v=1575216675750" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://cdn.glitch.com/8b28d6d2-76e7-4f17-9e5e-75e8311c5dae%2Fapple-touch-icon-114x114.png?v=1575216675971" />
+<link rel="apple-touch-icon" sizes="120x120" href="https://cdn.glitch.com/8b28d6d2-76e7-4f17-9e5e-75e8311c5dae%2Fapple-touch-icon-120x120.png?v=1575216675949" />
+<link rel="apple-touch-icon" sizes="144x144" href="https://cdn.glitch.com/8b28d6d2-76e7-4f17-9e5e-75e8311c5dae%2Fapple-touch-icon-144x144.png?v=1575216676034" />
+<link rel="apple-touch-icon" sizes="152x152" href="https://cdn.glitch.com/8b28d6d2-76e7-4f17-9e5e-75e8311c5dae%2Fapple-touch-icon-152x152.png?v=1575216676185" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.glitch.com/8b28d6d2-76e7-4f17-9e5e-75e8311c5dae%2Fapple-touch-icon-180x180.png?v=1575216675830" />
+    
+    <meta name="HandheldFriendly" content="true" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="canonical" href="https://cs1-admin.glitch.me/" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.glitch.com/a66c3f5c-9aba-45c0-952e-ccc59d8b0df3%2FCS1_logo_64.png?v=1564891473540"
+    />  
+    
+
+
     <title>CS1 Admin</title>
     <!-- Tell the browser that we've optimized the page for mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,26 +35,19 @@
     <!--
       Use normalize.css to get all the browsers to display the page the same
     -->
-    <link
-      rel="stylesheet"
-      href="normalize.css"
-    />
+    <link rel="stylesheet" href="normalize.css" />
 
     <!--
       Icon to display in browser tab, and when saving the page to the homescreen of your phone
     -->
     <link
       rel="icon"
-      href="https://cdn.glitch.com/22ac3967-dc2f-4f45-ae11-abb640fc8eb8%2FCS1_logo_64.png?v=1567594029860"
+      href="https://cdn.glitch.com/22ac3967-dc2f-4f45-ae11-abb640fc8eb8%2FCS1_Admin_logo_64.png?v=1574425452498"
       type="image/png"
     />
 
-  
     <!-- Load our special font from Google Fonts -->
-    <link
-      href="./source_sans_pro.css"
-      rel="stylesheet"
-    />
+    <link href="./source_sans_pro.css" rel="stylesheet" />
 
     <!-- Then load our base.css, all the layout information -->
     <link rel="stylesheet" href="./base.css" />
@@ -43,24 +55,24 @@
       Finally load theme.css, where we can set color information for our personalised dashboard
     -->
     <link rel="stylesheet" href="./theme.css" />
-    
+
     <!-- Web Socket Library -->
     <script src="/socket.io/socket.io.js"></script>
-    
-    
+
     <script>
       // This is just to force HTTPS (can't do it statically on glitch)
-      if(location.protocol == 'http:') location.protocol = 'https:';
-      if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw_cache_site.js')
-          .then(reg => console.log('Service Worker registered', reg))
-          .catch(err => console.error('Service Worker **not** registered', err));
+      if (location.protocol == "http:") location.protocol = "https:";
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/sw_cache_site.js")
+          .then(reg => console.log("Service Worker registered", reg))
+          .catch(err =>
+            console.error("Service Worker **not** registered", err)
+          );
+      } else {
+        console.warn("Service Worker not supported in this browser");
       }
-      else {
-        console.warn('Service Worker not supported in this browser');
-      }   
-    </script>  
-    
+    </script>
   </head>
   <body>
     <!--
@@ -75,7 +87,6 @@
           </div>
           <div class="header-avatar" id="icon"><i data-feather="user"></i></div>
         </div>
-        
       </div>
     </header>
     <!--
@@ -83,11 +94,6 @@
     -->
     <main class="content">
       <div class="flex row wrap cards">
-        
-    
-        
-        
-        
         <!-- CS1 Game Engine Admin Login -->
         <div class="card">
           <div class="card-title">Login</div>
@@ -112,20 +118,26 @@
         </div>
 
         <!-- User Accounts Card -->
-        <div class="card" id="users-card" style="display:none" spellcheck="false">
+        <div
+          class="card"
+          id="users-card"
+          style="display:none"
+          spellcheck="false"
+        >
           <div class="card-title">Users</div>
           <div class="card-body"></div>
         </div>
-        
+
         <!-- Current Players Card -->
-        <div class="card" id="current-players-card" style="display:none" spellcheck="false">
+        <div
+          class="card"
+          id="current-players-card"
+          style="display:none"
+          spellcheck="false"
+        >
           <div class="card-title">Currently Playing</div>
           <div class="card-body"></div>
         </div>
-
-
-        
-
 
         <!-- end CARDS container -->
       </div>
@@ -136,7 +148,14 @@
     -->
     <footer>
       <h6>
-        Designed for administrating <a href="https://glitch.com/edit/#!/cs1?path=README.md:1:0" target="_blank" rel="noopener noreferrer">CS1 Game Engine</a> applications.
+        Designed for administrating
+        <a
+          href="https://glitch.com/edit/#!/cs1?path=README.md:1:0"
+          target="_blank"
+          rel="noopener noreferrer"
+          >CS1 Game Engine</a
+        >
+        applications.
       </h6>
     </footer>
 
@@ -145,12 +164,6 @@
     <!-- Load our own JavaScripts -->
     <script type="text/javascript" src="./index.js"></script>
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-
-
-  
-
   </body>
 </html>
-  
